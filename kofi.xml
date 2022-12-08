@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+    <name>plg_system_kofi</name>
+    <author>Eyad Issa</author>
+
+    <creationDate>Dicember 2022</creationDate>
+    <copyright>Copyright (C) 2022 Eyad Issa. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later</license>
+
+    <version>0.0.2</version>
+
+    <files>
+        <filename plugin="kofi">kofi.php</filename>
+        <filename>index.html</filename>
+        <filename>kofi.js</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.plg_system_kofi.ini</language>
+        <language tag="en-GB">en-GB.plg_system_kofi.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+
+            <fieldset name="basic">
+                <field name="username" type="text" label="Ko-Fi Username" />
+                <field name="type" type="text" default="floating-chat" label="Widget Type" />
+                <field name="donateButtonText" default="Support me" type="text" label="Button Text" />
+                <field name="donateButtonBackgroundColor" default="#00b9fe" type="color" label="Button Background Color" />
+                <field name="donateButtonTextColor" default="#fff" type="color" label="Button Text Color" />
+
+            </fieldset>
+
+        </fields>
+    </config>
+</extension>
