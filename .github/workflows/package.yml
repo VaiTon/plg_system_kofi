@@ -9,11 +9,11 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Create zip
-      run: zip plg_system_kofi.zip index.html kofi.* en-GB.plg_system_kofi.*
       
-    - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v3.1.1
+    - uses: actions/upload-artifact@v3.1.1
       with:
-        name: plg_system_kofi.zip
-        path: plg_system_kofi.zip
+        name: plg_system_kofi
+        path: |
+          index.html
+          kofi.*
+          en-GB.plg_system_kofi.*
